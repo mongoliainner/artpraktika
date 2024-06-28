@@ -2,6 +2,15 @@
 import React, { useEffect } from "react";
 import styles from "./Page2.module.css";
 
+const images = [
+  "assets/Blender1.png",
+  "assets/Blender2.png",
+  "assets/Blender3.png",
+  "assets/Blender4.png",
+  "assets/Blender5.png",
+  "assets/Blender6.png",
+];
+
 const getRandomSpan = () => {
   const spans = [1, 2];
   return spans[Math.floor(Math.random() * spans.length)];
@@ -48,7 +57,7 @@ const Page2 = () => {
           </a>
         </div>
       </div>
-      {Array.from({ length: 1 }).map((_, index) => (
+      {Array.from({ length: 8 }).map((_, index) => (
         <div key={index} className={styles.scrollItem}>
           <div className={styles.gridContainer}>
             {Array.from({ length: 6 }).map((_, gridIndex) => (
@@ -56,6 +65,7 @@ const Page2 = () => {
                 key={gridIndex}
                 className={styles.gridItem}
                 style={{
+                  backgroundImage: `url(${images[gridIndex % images.length]})`,
                   gridColumnEnd: `span ${getRandomSpan()}`,
                   gridRowEnd: `span ${getRandomSpan()}`,
                 }}

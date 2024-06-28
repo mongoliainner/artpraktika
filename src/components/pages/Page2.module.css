@@ -29,7 +29,6 @@
   flex: 0 0 100vw;
   height: 100vh;
   scroll-snap-align: start;
-  background-color: #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +56,6 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
@@ -77,13 +75,13 @@
 }
 
 .gridItem {
-  background-color: #333;
+  background-size: cover;
+  background-position: center;
   color: white;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   padding: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   text-align: right;
   font-weight: 600;
