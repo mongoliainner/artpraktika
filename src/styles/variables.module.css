@@ -1,0 +1,56 @@
+/* src/styles/variables.module.css */
+:root {
+  --ft-900: 14rem; /* 28x */
+  --ft-600: 6rem; /* 12x */
+  --ft-500: 4rem; /* 8x */
+  --ft-400: 3rem; /* 6x */
+  --ft-300: 2rem; /* 4x */
+  --ft-200: 1rem; /* 2x */
+  --ft-100: 0.5rem; /* 1x */
+  --border-radius: 10px;
+}
+
+@font-face {
+  font-family: "PPRadioGrotesk";
+  src: url("/src/assets/PPRadioGrotesk-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "PPRadioGrotesk", sans-serif;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+  overflow-x: hidden;
+  background-image: url("/src/assets/sky.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --ft-900: 7rem; /* 14x */
+    --ft-600: 3rem; /* 6x */
+    --ft-500: 2rem; /* 4x */
+    --ft-400: 1.5rem; /* 3x */
+    --ft-300: 1rem; /* 2x */
+    --ft-200: 0.5rem; /* 1x */
+    --ft-100: 0.25rem; /* 0.5x */
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  :root {
+    --ft-900: 14rem; /* 28x */
+    --ft-600: 6rem; /* 12x */
+    --ft-500: 4rem; /* 8x */
+    --ft-400: 3rem; /* 6x */
+    --ft-300: 2rem; /* 4x */
+    --ft-200: 1rem; /* 2x */
+    --ft-100: 0.5rem; /* 1x */
+  }
+}

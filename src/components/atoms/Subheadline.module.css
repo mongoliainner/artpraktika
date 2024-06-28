@@ -1,0 +1,7 @@
+/* src/components/atoms/Subheadline.module.css */
+@import "../../styles/variables.module.css";
+
+.subheadline {
+  font-size: var(--ft-400);
+  margin: 0;
+}

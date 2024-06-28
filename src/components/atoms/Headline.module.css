@@ -1,0 +1,7 @@
+/* src/components/atoms/Headline.module.css */
+@import "../../styles/variables.module.css";
+
+.headline {
+  font-size: var(--ft-600);
+  margin: 0;
+}
