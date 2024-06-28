@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>this is a test</h1>
+      <h1>fair</h1>
     </>
   );
 }
