@@ -1,47 +1,42 @@
 /* src/pages/Page3.module.css */
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 .pageContainer {
   display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  width: 100vw;
-  height: 100vh;
-  white-space: nowrap;
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #dddddd00;
+}
+
+.iframeContainer {
+  justify-content: center;
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  height: 90%;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
-.pageContainer::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+.iframeContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
 
-.scrollItem {
-  flex: 0 0 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  background-color: #dddddd00;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  box-sizing: border-box;
+.iframe {
+  flex: 0 0 90%;
+  height: 100%;
+  border: none;
 }
 
 .buttonContainer {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 60px;
+  padding: 20px;
 }
 
 .goBackButton {
@@ -50,7 +45,7 @@
   font-size: 2rem;
   font-weight: 900;
   border: none;
-  border-radius: 50%;
+  border-radius: 60px;
   width: 60px;
   height: 60px;
   display: flex;
@@ -63,40 +58,4 @@
 
 .goBackButton:hover {
   background-color: #90e504;
-}
-
-.gridContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.gridItem {
-  background-color: #ffffff;
-  color: white;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  text-align: right;
-  font-weight: 600;
-  opacity: 0; /* Start hidden */
-  transform: translateX(-100%); /* Start off-screen */
-}
-
-.animate {
-  animation: slideIn 0.5s ease-in-out forwards; /* Trigger the animation */
-}
-
-@media screen and (max-width: 1024px) {
-  .gridContainer {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }

@@ -2,15 +2,6 @@
 import React, { useEffect } from "react";
 import styles from "./Page2.module.css";
 
-const images = [
-  "assets/Blender1.png",
-  "assets/Blender2.png",
-  "assets/Blender3.png",
-  "assets/Blender4.png",
-  "assets/Blender5.png",
-  "assets/Blender6.png",
-];
-
 const getRandomSpan = () => {
   const spans = [1, 2];
   return spans[Math.floor(Math.random() * spans.length)];
@@ -18,13 +9,16 @@ const getRandomSpan = () => {
 
 const getRandomText = () => {
   const texts = [
-    "Lorem ipsum dolor sit amet",
-    "Consectetur adipiscing elit",
-    "Integer nec odio",
-    "Praesent libero",
-    "Sed cursus ante dapibus diam",
-    "Nulla quis sem at nibh elementum imperdiet",
-    "Duis sagittis ipsum",
+    "Digital art is not about creating perfect images; it's about creating new ones.",
+    "The computer is not just a tool; it's a new medium for art.",
+    "Digital art allows us to explore new forms of expression and to create art that was never before possible.",
+    "Digital art is not about replacing traditional art; it's about expanding the possibilities of art.",
+    "Digital art is democratizing art, making it more accessible to everyone.",
+    "The future of art is digital.",
+    "Digital art is still in its early stages, but it has the potential to revolutionize the way we create and experience art.",
+    "Digital art is a powerful tool for storytelling and social commentary.",
+    "Digital art is challenging our traditional notions of what art is and can be.",
+    "Digital art is here to stay, and it's changing the world.",
   ];
   return texts[Math.floor(Math.random() * texts.length)];
 };
@@ -65,7 +59,6 @@ const Page2 = () => {
                 key={gridIndex}
                 className={styles.gridItem}
                 style={{
-                  backgroundImage: `url(${images[gridIndex % images.length]})`,
                   gridColumnEnd: `span ${getRandomSpan()}`,
                   gridRowEnd: `span ${getRandomSpan()}`,
                 }}

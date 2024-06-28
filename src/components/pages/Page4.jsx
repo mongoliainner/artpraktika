@@ -7,11 +7,6 @@ const Page4 = () => {
     <div className={styles.pageContainer}>
       <div className={styles.iframeContainer}>
         <iframe
-          src="https://yuexex.github.io/typography/"
-          title="Embedded Webpage 1"
-          className={styles.iframe}
-        ></iframe>
-        <iframe
           src="https://mongoliainner.github.io/neue2.2/"
           title="Embedded Webpage 2"
           className={styles.iframe}
