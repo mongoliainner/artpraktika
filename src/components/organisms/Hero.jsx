@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <div className={styles.heroContainer} id="hero">
       <div className={styles.hero}>
-        <Card header="Header 1" subheader="Subheader 1" link="#page1" />
-        <Card header="Header 2" subheader="Subheader 2" link="#page2" />
-        <Card header="Header 3" subheader="Subheader 3" link="#page3" />
-        <Card header="Header 4" subheader="Subheader 4" link="#page4" />
+        <Card header="poetry" subheader="" link="#page1" />
+        <Card header="gallery" subheader="" link="#page2" />
+        <Card header="reflect" subheader="" link="#page3" />
+        <Card header="connect" subheader="" link="#page4" />
       </div>
     </div>
   );

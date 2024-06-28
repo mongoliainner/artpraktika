@@ -36,7 +36,7 @@
   font-size: 2rem;
   box-sizing: border-box;
   padding: var(--ft-200);
-  border-radius: var(--ft-900);
+  border-radius: var(--ft-200);
 }
 
 .buttonContainer {
@@ -77,7 +77,7 @@
   padding: 20px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: var(--ft-900);
+  border-radius: var(--ft-200);
 }
 
 .gridItem {
@@ -92,7 +92,7 @@
   font-weight: 600;
   opacity: 0; /* Start hidden */
   transform: translateX(-100%); /* Start off-screen */
-  border-radius: var(--ft-900);
+  border-radius: var(--ft-200);
 }
 
 .animate {

@@ -1,6 +1,7 @@
 /* src/pages/Page4.module.css */
 .pageContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -8,16 +9,18 @@
   background-color: #ddd;
 }
 
-.scrollItem {
+.sketchContainer {
+  flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .buttonContainer {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .goBackButton {
@@ -26,8 +29,8 @@
   font-size: 2rem;
   font-weight: 900;
   border: none;
-  border-radius: 50%;
-  width: 60px;
+  border-radius: 10px;
+  width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
