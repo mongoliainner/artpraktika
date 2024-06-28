@@ -1,3 +1,4 @@
+// src/components/atoms/Headline.jsx
 import React from "react";
 import styles from "./Headline.module.css";
 

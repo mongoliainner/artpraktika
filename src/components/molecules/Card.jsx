@@ -4,12 +4,14 @@ import styles from "./Card.module.css";
 import Headline from "../atoms/Headline";
 import Subheadline from "../atoms/Subheadline";
 
-const Card = ({ header, subheader }) => {
+const Card = ({ header, subheader, link }) => {
   return (
-    <div className={styles.card}>
-      <Headline>{header}</Headline>
-      <Subheadline>{subheader}</Subheadline>
-    </div>
+    <a href={link} className={styles.cardLink}>
+      <div className={styles.card}>
+        <Headline>{header}</Headline>
+        <Subheadline>{subheader}</Subheadline>
+      </div>
+    </a>
   );
 };
 

@@ -5,12 +5,14 @@ import Card from "../molecules/Card";
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
-      <Card header="disk.party" subheader="" />
-      <Card header="disk.sound" subheader="some ambient works" />
-      <Card header="art" subheader="" />
-      <Card header="runway" subheader="" />
-    </section>
+    <div className={styles.heroContainer}>
+      <div className={styles.hero}>
+        <Card header="Header 1" subheader="Subheader 1" link="#page1" />
+        <Card header="Header 2" subheader="Subheader 2" link="#page2" />
+        <Card header="Header 3" subheader="Subheader 3" link="#page3" />
+        <Card header="Header 4" subheader="Subheader 4" link="#page4" />
+      </div>
+    </div>
   );
 };
 

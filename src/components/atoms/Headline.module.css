@@ -3,5 +3,6 @@
 
 .headline {
   font-size: var(--ft-600);
+  font-weight: 900;
   margin: 0;
 }

@@ -1,3 +1,4 @@
+// src/components/atoms/Subheadline.jsx
 import React from "react";
 import styles from "./Subheadline.module.css";
 

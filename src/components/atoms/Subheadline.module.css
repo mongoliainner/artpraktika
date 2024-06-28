@@ -3,5 +3,6 @@
 
 .subheadline {
   font-size: var(--ft-400);
+  font-weight: 900;
   margin: 0;
 }
