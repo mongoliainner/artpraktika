@@ -48,7 +48,7 @@ const Page2 = () => {
           </a>
         </div>
       </div>
-      {Array.from({ length: 8 }).map((_, index) => (
+      {Array.from({ length: 1 }).map((_, index) => (
         <div key={index} className={styles.scrollItem}>
           <div className={styles.gridContainer}>
             {Array.from({ length: 6 }).map((_, gridIndex) => (
