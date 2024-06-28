@@ -1,0 +1,14 @@
+/* src/styles.module.css */
+:root {
+  --ft-900: 14rem; /* 28x */
+  --ft-600: 6rem; /* 12x */
+  --ft-500: 4rem; /* 8x */
+  --ft-400: 3rem; /* 6x */
+  --ft-300: 2rem; /* 4x */
+  --ft-200: 1rem; /* 2x */
+  --ft-100: 0.5rem; /* 1x */
+}
+
+.example {
+  font-size: var(--ft-600);
+}
