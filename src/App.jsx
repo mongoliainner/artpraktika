@@ -1,10 +1,10 @@
 // src/App.jsx
 import React, { useEffect, useState } from "react";
 import Hero from "./components/organisms/Hero";
-import Page1 from "./pages/Page1";
-import Page2 from "./pages/Page2";
-import Page3 from "./pages/Page3";
-import Page4 from "./pages/Page4";
+import Page1 from "./components/pages/Page1";
+import Page2 from "./components/pages/Page2";
+import Page3 from "./components/pages/Page3";
+import Page4 from "./components/pages/Page4";
 import "./styles/variables.module.css";
 
 const App = () => {
